@@ -1,0 +1,18 @@
+default:
+	echo "hello world"
+
+first: third
+second: third
+
+another: first second
+	echo "we are in another"
+
+first:
+	echo "first" \
+	echo "on other line"
+
+second:
+	echo "second"
+
+third:
+	echo "third"

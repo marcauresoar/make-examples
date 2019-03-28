@@ -1,0 +1,15 @@
+func: s1.sh s2.sh
+	echo "hello world"
+
+s1.sh: 
+	/bin/bash s1.sh
+
+s2.sh:
+	/bin/bash s2.sh
+
+*.sh: first
+
+first:
+	echo "blablabalba"
+
+

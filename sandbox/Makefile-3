@@ -1,0 +1,15 @@
+.PHONY: all
+
+all: first second third
+
+first:
+	echo "first"
+	touch first
+
+second:
+	echo "second"
+	touch second
+
+third:
+	echo "third"
+	touch third
